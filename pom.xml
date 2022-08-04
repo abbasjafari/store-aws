@@ -12,6 +12,8 @@
   <modules>
     <module>service-discovery</module>
     <module>gateway</module>
+
+    <module>basket</module>
   </modules>
 
 </project>
