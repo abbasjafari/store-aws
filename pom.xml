@@ -15,6 +15,7 @@
     <module>config-server</module>
 
     <module>basket</module>
+    <module>customer</module>
   </modules>
 
 </project>
