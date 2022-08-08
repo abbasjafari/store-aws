@@ -6,3 +6,4 @@ Spring:
       server:
         git:
           url:https://github.com/abbasjafari/store/config-server
+
