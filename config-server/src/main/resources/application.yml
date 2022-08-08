@@ -1,9 +1,5 @@
+spring:
+  profiles:
+    active: native
 server:
-  port:8888
-Spring:
-  cloud:
-    config:
-      server:
-        git:
-          url:https://github.com/abbasjafari/store/config-server
-
+  port: 8888
