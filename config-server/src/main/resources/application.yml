@@ -6,6 +6,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/abbasjafari/store.git config-git
+          uri: https://github.com/alikarimi8765/spring-cloud-sample.git
   application:
     name: config-server
