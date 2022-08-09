@@ -5,17 +5,11 @@ spring:
     name: gateway
   cloud:
     gateway:
-      discovery:
-        enable: true
-        locator:
-          enabled: true
-        locatorlower-case-service-id: true
-
-#      routes:
-#        - id: customer
-#          uri: lb://customer
-#          predicates:
-#            - Path=/customer/**
+      routes:
+        - id: customer
+          uri: lb://customer
+          predicates:
+            - Path=/customer/**
 
 eureka:
   client:
