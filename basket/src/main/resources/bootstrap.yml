@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: basket
+  cloud:
+      discovery:
+        enabled: true

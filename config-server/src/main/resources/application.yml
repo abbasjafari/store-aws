@@ -8,7 +8,7 @@ spring:
         git:
           uri: https://github.com/alikarimi8765/spring-cloud-sample.git
           search-paths:
-            - station*
+            - config*
   application:
     name: configserver
 
