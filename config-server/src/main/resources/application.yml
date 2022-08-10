@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name : configServer
+    name : config-server
   cloud:
     discovery:
       enabled: true
@@ -15,5 +15,7 @@ spring:
             - config*
 eureka:
   client:
-    server-url:
-      defaultZone: http://localhost:8761
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
