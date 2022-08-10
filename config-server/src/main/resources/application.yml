@@ -7,5 +7,12 @@ spring:
       server:
         git:
           uri: https://github.com/alikarimi8765/spring-cloud-sample.git
+          search-paths:
+            - station*
   application:
-    name: config-server
+    name: configserver
+
+eureka:
+  client:
+    server-url:
+      defaultZone: http://localhost:8761/eureka
