@@ -1,13 +1,12 @@
 spring:
   application:
-    name: basket
+    name : basket-server
   cloud:
+    config:
       discovery:
-        enabled: true
-      config:
-        discovery:
-          enabled: true
+        enalbled: true
+      service-id: config-server
 eureka:
   client:
-    server-url:
-      defaultZone: http://localhost:8761/eureka
+    serviceUrl:
+      defaultZone : http://localhost:8761/eureka

@@ -2,6 +2,9 @@ server:
   port: 8888
 
 spring:
+  config:
+    name: config-server
+
   application:
     name : config-server
   cloud:
@@ -11,8 +14,6 @@ spring:
       server:
         git:
           uri: https://github.com/alikarimi8765/spring-cloud-sample.git
-          search-paths:
-            - config*
 eureka:
   client:
     serviceUrl:
