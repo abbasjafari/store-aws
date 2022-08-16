@@ -2,10 +2,21 @@ server:
   port: 8888
 
 spring:
+  config:
+    name: config-server
+
+  application:
+    name : config-server
   cloud:
+    discovery:
+      enabled: true
     config:
       server:
         git:
           uri: https://github.com/alikarimi8765/spring-cloud-sample.git
-  application:
-    name: config-server
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    preferIpAddress: true
